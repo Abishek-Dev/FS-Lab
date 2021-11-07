@@ -11,13 +11,13 @@ client.get('E-mail', function(err, reply) {
   var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'abktest08@gmail.com',
+    user: 'user@gmail.com',
     pass: ''
   }
 });
 
 var mailOptions = {
-  from: 'abktest08@gmail.com',
+  from: 'user@gmail.com',
   to: reply,
   subject: 'Hello User',
   text: 'Welcome User thank you for using our services good luck'
